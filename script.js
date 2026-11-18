@@ -13,24 +13,21 @@ const SECTIONS = {
   projets:     { titre: "Projets", champs: [["nom", "Nom du projet"], ["desc", "Description"]] }
 };
 
-// Exemple affiché au départ : à modifier
+// Exemple neutre affiché au départ (chaque visiteur le remplace par ses propres données)
 const DEFAUT = {
   couleur: "#2f5d8a",
-  nom: "Salwa Mouaddab",
-  titre: "Développeuse Digitale",
-  email: "",
-  tel: "+212 656376212",
-  ville: "Casablanca, Maroc",
-  lien: "salwamouaddab.github.io/my-portfolio",
-  profil: "Stagiaire en Développement Digital, passionnée par la création d'interfaces modernes et d'applications web.",
-  competences: "HTML, CSS, JavaScript, PHP, MySQL, API REST, Git",
+  nom: "Prénom Nom",
+  titre: "Votre titre professionnel",
+  email: "prenom.nom@exemple.com",
+  tel: "+212 6 00 00 00 00",
+  ville: "Ville, Pays",
+  lien: "",
+  profil: "Présentez-vous en quelques lignes : votre parcours, vos qualités et ce que vous recherchez.",
+  competences: "HTML, CSS, JavaScript",
   langues: "Arabe, Français",
   experiences: [],
-  formations: [{ diplome: "Technicien Spécialisé en Développement Digital", ecole: "OFPPT", periode: "2025 - en cours" }],
-  projets: [
-    { nom: "Bazar Al-Atika", desc: "Site e-commerce en PHP/MySQL avec authentification et espace admin." },
-    { nom: "Application Météo", desc: "Météo en temps réel avec l'API Open-Meteo (JavaScript)." }
-  ]
+  formations: [{ diplome: "Votre diplôme", ecole: "Votre établissement", periode: "2024 - 2026" }],
+  projets: [{ nom: "Nom du projet", desc: "Courte description du projet." }]
 };
 
 const CLE = "cv-generator-v1";
