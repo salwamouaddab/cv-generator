@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générateur de CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="barre">
+    <h1>Générateur de CV</h1>
+    <div class="actions">
+      <label class="couleur">Couleur <input type="color" id="couleur" value="#2f5d8a"></label>
+      <button type="button" id="btnPdf" class="btn">Télécharger en PDF</button>
+    </div>
+  </header>
+
+  <main class="page">
+    <form id="formulaire" class="formulaire" autocomplete="off">
+      <fieldset>
+        <legend>Informations personnelles</legend>
+        <label>Photo (facultative) <input type="file" id="photo" accept="image/*"></label>
+        <label>Nom complet <input data-champ="nom"></label>
+        <label>Titre professionnel <input data-champ="titre"></label>
+        <label>Email <input type="email" data-champ="email" placeholder="prenom.nom@exemple.com"></label>
+        <label>Téléphone <input data-champ="tel"></label>
+        <label>Ville <input data-champ="ville"></label>
+        <label>Lien (GitHub, portfolio) <input data-champ="lien"></label>
+        <label>Profil <textarea data-champ="profil" rows="4"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Compétences et langues</legend>
+        <label>Compétences (séparées par des virgules) <input data-champ="competences"></label>
+        <label>Langues (séparées par des virgules) <input data-champ="langues"></label>
+      </fieldset>
+
+      <!-- Expériences, formations et projets : générés par JavaScript -->
+      <div id="listes"></div>
+    </form>
+
+    <section class="apercu" aria-label="Aperçu du CV">
+      <article id="cv" class="cv"></article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
